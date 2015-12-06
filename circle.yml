@@ -1,0 +1,21 @@
+machine:
+  ruby:
+    version:
+      2.1.3    
+
+dependencies:
+  cache_directories:
+    - ~/pkgs/
+    - ~/.vagrant.d/
+  pre:
+    - bash pre.sh
+
+test:
+  override:
+    - echo 'nothing to do'
+
+deployment:
+  master:
+    branch: master
+    commands:
+      - bash deploy.sh

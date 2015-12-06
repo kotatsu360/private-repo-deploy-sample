@@ -1,0 +1,20 @@
+DEPENDENCIES
+  private-repo-clone
+    path: site-cookbooks/private-repo-clone
+
+GRAPH
+  build-essential (2.2.4)
+  chef_handler (1.2.0)
+  dmg (2.3.0)
+  git (4.3.4)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    windows (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  private-repo-clone (0.1.0)
+    git (~> 4.3)
+  windows (1.38.4)
+    chef_handler (>= 0.0.0)
+  yum (3.8.2)
+  yum-epel (0.6.5)
+    yum (~> 3.2)

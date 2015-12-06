@@ -1,0 +1,3 @@
+source "https://supermarket.getchef.com"
+
+cookbook 'private-repo-clone', path: 'site-cookbooks/private-repo-clone'
